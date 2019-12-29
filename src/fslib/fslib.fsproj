@@ -208,7 +208,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy $(TargetPath) $(SolutionDir)..\..\Assets\fslib\ /I" />
+    <Exec Command="xcopy $(TargetPath) $(SolutionDir)..\..\Assets\fslib\ /I /F /H /Y" />
   </Target>
 
 </Project>
