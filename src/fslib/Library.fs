@@ -29,5 +29,5 @@ type MoveOfKey() =
             if d <> Vector3.zero then
                 body.AddForce(moveSpeed * d, ForceMode.Impulse)
 
-        if characterController.isGrounded then
+        if characterController.isGrounded && Input.GetKey KeyCode.Space then
             body.AddForce(jumpPower * b.transform.up, ForceMode.Impulse)
