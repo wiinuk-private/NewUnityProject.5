@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 1687274631}
   - component: {fileID: 1687274636}
   - component: {fileID: 1687274635}
-  - component: {fileID: 1687274638}
+  - component: {fileID: 1687274637}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -475,18 +475,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1687274630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1159202511, guid: 8a44671b4372d52499ac6f3b9107e557, type: 3}
+  m_Script: {fileID: 1573788166, guid: 43182fe6b6197ac4ab9d6eaff41ec94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.9
-  maxSpeed: 5
-  jumpPower: 3
-  keySet:
-    forward@: 119
-    back@: 115
-    right@: 100
-    left@: 97
-    jump@: 32
+  rotationSpeed: {x: 1, y: 1, z: 1}
+  xTransform: {fileID: 963194228}
+  yTransform: {fileID: 1687274634}
 --- !u!54 &1687274636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -503,7 +497,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &1687274638
+--- !u!114 &1687274637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -512,9 +506,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1687274630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1573788166, guid: 8a44671b4372d52499ac6f3b9107e557, type: 3}
+  m_Script: {fileID: -1159202511, guid: 43182fe6b6197ac4ab9d6eaff41ec94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: {x: 1, y: 1, z: 1}
-  xTransform: {fileID: 963194228}
-  yTransform: {fileID: 1687274634}
+  moveSpeed: 1
+  maxSpeed: 5
+  jumpPower: 3
+  keySet:
+    forward@: 119
+    back@: 115
+    right@: 100
+    left@: 97
+    jump@: 32
