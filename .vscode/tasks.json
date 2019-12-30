@@ -11,7 +11,17 @@
                 "./src/fslib/fslib.fsproj",
                 "build"
             ],
-            "problemMatcher": "$msCompile",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": {
+                "base": "$msCompile",
+                "background": {
+                    "beginsPattern": "^\\s*watch\\s*:\\s*Started\\s*$",
+                    "endsPattern": "^\\s*watch\\s*:\\s*Exited\\s*$"
+                }
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
