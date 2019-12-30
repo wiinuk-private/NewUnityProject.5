@@ -18,8 +18,8 @@
             "problemMatcher": {
                 "base": "$msCompile",
                 "background": {
-                    "beginsPattern": "^\\s*watch\\s*:\\s*Started\\s*$",
-                    "endsPattern": "^\\s*watch\\s*:\\s*Exited\\s*$"
+                    "beginsPattern": "^\\s*watch\\s*:\\s*Started",
+                    "endsPattern": "^\\s*watch\\s*:\\s*Exited"
                 }
             },
             "group": {
