@@ -59,7 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 # ionide
-/.ionide/
+/.ionide/symbolCache.db
 
 # msbuild
 [Bb]in/
