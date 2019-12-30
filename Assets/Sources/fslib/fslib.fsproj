@@ -207,6 +207,6 @@
     </Reference>
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy $(TargetPath) $(ProjectDir)..\..\Libraries\ /I /F /H /Y" />
+    <Exec Command="xcopy $(TargetPath) $(ProjectDir)..\..\ /I /F /H /Y" />
   </Target>
 </Project>
