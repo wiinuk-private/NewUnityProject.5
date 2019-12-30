@@ -5,6 +5,7 @@
   <ItemGroup>
     <Compile Include="MoveOfKey.fs" />
     <Compile Include="FirstPersonCameraMoveOfMouse.fs" />
+    <Compile Include="ThrowObject.fs" />
   </ItemGroup>
   <PropertyGroup>
     <UnityEngineDir>C:\Program Files\Unity\Hub\Editor\2019.2.17f1\Editor\Data\Managed\UnityEngine\</UnityEngineDir>
