@@ -64,4 +64,3 @@ crashlytics-build.properties
 # msbuild
 [Bb]in/
 [Oo]bj/
-/Assets/fslib/
