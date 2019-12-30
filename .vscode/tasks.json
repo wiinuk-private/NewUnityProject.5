@@ -8,7 +8,7 @@
             "args": [
                 "watch",
                 "--project",
-                "./src/fslib/fslib.fsproj",
+                "./Assets/Sources/fslib/fslib.fsproj",
                 "build"
             ],
             "isBackground": true,
