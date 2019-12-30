@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "watch",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "watch",
+                "--project",
+                "./src/fslib/fslib.fsproj",
+                "build"
+            ],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            },
+            "problemMatcher": {
+                "base": "$msCompile",
+                "background": {
+                    "beginsPattern": "^\\s*watch\\s*:\\s*Started\\s*$",
+                    "endsPattern": "^\\s*watch\\s*:\\s*Exited\\s*$"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
