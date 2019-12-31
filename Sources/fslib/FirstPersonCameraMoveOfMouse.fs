@@ -2,9 +2,15 @@ namespace FsLib
 open UnityEngine
 open System
 
+type MouseButton =
+    | None = -1
+    | Left = 0
+    | Right = 1
+
 type FirstParsonCameraMoveOfMouse() =
     inherit MonoBehaviour()
 
+    let [<SerializeField>] mutable mouseButton = MouseButton.Left
     let [<SerializeField>] mutable rotationSpeed = Vector3.one
     let [<SerializeField>] mutable xTransform: Transform = null
     let [<SerializeField>] mutable yTransform: Transform = null
@@ -35,11 +41,10 @@ type FirstParsonCameraMoveOfMouse() =
                 a.x <- newAngle.x
                 a
 
-
     member b.Start() = start b
     member _.Update() =
-        if Input.GetMouseButtonDown 0 then
+        if Input.GetMouseButtonDown(int mouseButton) then
             onMouseDown()
 
-        if Input.GetMouseButton 0 then
+        if mouseButton = MouseButton.None || Input.GetMouseButton(int mouseButton) then
             onMousePush()
